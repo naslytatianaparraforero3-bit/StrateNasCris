@@ -1,5 +1,5 @@
 package com.CrisS2.NaslyP.strategy;
 
-public class CalculoTarifaStrategy {
-    
+public interface CalculoTarifaStrategy {
+    double calcularTotal(double precioBase, int noches);
 }

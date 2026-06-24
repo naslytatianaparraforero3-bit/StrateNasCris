@@ -1,5 +1,8 @@
 package com.CrisS2.NaslyP.strategy;
 
-public class TemporadaAltaStrategy {
-    
+public class TemporadaAltaStrategy implements CalculoTarifaStrategy {
+    @Override
+    public double calcularTotal(double precioBase, int noches) {
+        return (precioBase * noches) * 1.25;
+    }
 }
